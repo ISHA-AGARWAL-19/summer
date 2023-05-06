@@ -31,11 +31,10 @@ st.markdown("""
         </style>
         """, unsafe_allow_html=True)
 
-df1= pd.read_csv("athletes1.csv")
-df2= pd.read_csv("athletes2.csv")
+df=pd.read_csv("Athletes_summer_games.csv")
 region_df=pd.read_csv("regions.csv")
 
-df = preprocessor.preprocess_s(df1, df2, region_df)
+df = preprocessor.preprocess(df, region_df)
 
 def add_bg_from_url():
     st.markdown(
