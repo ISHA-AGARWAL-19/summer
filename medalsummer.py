@@ -31,7 +31,7 @@ st.markdown("""
         </style>
         """, unsafe_allow_html=True)
 
-df=pd.read_csv("Athletes_summer_games.csv")
+df=pd.read_csv("athlete_events.csv")
 region_df=pd.read_csv("regions.csv")
 
 df = preprocessor.preprocess(df, region_df)
